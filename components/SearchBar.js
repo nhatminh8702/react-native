@@ -42,6 +42,7 @@ const SearchBar = () => {
         onChangeText={text => renderSuggestion(text)}
       />
       <FlatList
+        style={{ flexGrow: 0 }}
         data={suggestion}
         renderItem={({ item }) => (
           <TouchableOpacity
